@@ -50,6 +50,8 @@ class InsertionSort {
         //Insertion sort will find the correct position of given element.
         //we need to check all previous elements and move to correct position
 
+        //Time Complexity: O(N^2)
+        //Auxiliary Space: O(1)
 
         for(int i=1;i<noOfElements;i++)
         {
