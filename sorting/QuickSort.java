@@ -48,29 +48,26 @@ public class QuickSort {
     smaller elements to left of pivot and greater
     elements to right of pivot.  */
 
-    int partician(int[] arr,int l,int r)
-    {
-        int i=l-1;
-        int p=arr[r];
-        for(int j=l;j<=r-1;j++)
-        {
-            if(arr[j]<p)
-            {
+    int partician(int[] arr, int l, int r) {
+        int i = l - 1;
+        int p = arr[r];
+        for (int j = l; j <= r - 1; j++) {
+            if (arr[j] < p) {
                 i++;
-                int temp=arr[j];
-                arr[j]=arr[i];
-                arr[i]=temp;
+                int temp = arr[j];
+                arr[j] = arr[i];
+                arr[i] = temp;
             }
         }
-        int temp=arr[i+1];
-        arr[i+1]=arr[r];
-        arr[r]=temp;
-        return (i+1);
+        int temp = arr[i + 1];
+        arr[i + 1] = arr[r];
+        arr[r] = temp;
+        return (i + 1);
 
     }
-    void sort(int[] arr, int left,int right)
-    {
-        if(left<right) {
+
+    void sort(int[] arr, int left, int right) {
+        if (left < right) {
             int p = partician(arr, left, right);
             sort(arr, left, p - 1);
             sort(arr, p + 1, right);
@@ -89,11 +86,11 @@ public class QuickSort {
         for (int i = 0; i < noOfElements; i++) {
             nums[i] = sc.nextInt();
         }
-        QuickSort q=new QuickSort();
-        q.sort(nums,0,noOfElements-1);
+        QuickSort q = new QuickSort();
+        q.sort(nums, 0, noOfElements - 1);
 
         for (int i = 0; i < noOfElements; i++) {
-            System.out.print(nums[i]+" ");
+            System.out.print(nums[i] + " ");
         }
 
     }
