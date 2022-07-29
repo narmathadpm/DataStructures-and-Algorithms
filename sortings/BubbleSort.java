@@ -21,20 +21,21 @@ Now, during second iteration it should look like this:
 
 
 */
+
 import java.util.Scanner;
+
 class BubbleSort {
     public static void main(String[] args) {
         //Scanner is used to get input from user
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         //No of elements in unsorted array
         System.out.println("Enter array size");
-        int noOfElements =sc.nextInt();
+        int noOfElements = sc.nextInt();
         //Declaring array and getting
         System.out.println("Enter array elements");
         int nums[] = new int[noOfElements];
-        for (int i=0;i<noOfElements;i++)
-        {
-            nums[i]=sc.nextInt();
+        for (int i = 0; i < noOfElements; i++) {
+            nums[i] = sc.nextInt();
         }
 
         //Bubble sort will compare two element and largest element to last position.
@@ -42,16 +43,13 @@ class BubbleSort {
         //It will have time complexity is O(n^2)
         // not suitable for large problems
 
-        int temp=0;// To store element while swapping
-        for (int i=0;i<noOfElements;i++)
-        {
-            for(int j=0;j<noOfElements-i-1;j++)
-            {
-                if(nums[j]>nums[j+1])
-                {
-                    temp=nums[j+1];
-                    nums[j+1]=nums[j];
-                    nums[j]=temp;
+        int temp = 0;// To store element while swapping
+        for (int i = 0; i < noOfElements; i++) {
+            for (int j = 0; j < noOfElements - i - 1; j++) {
+                if (nums[j] > nums[j + 1]) {
+                    temp = nums[j + 1];
+                    nums[j + 1] = nums[j];
+                    nums[j] = temp;
                 }
             }
 
@@ -59,9 +57,8 @@ class BubbleSort {
 
         // printing sorted elements
 
-        for (int i=0;i<noOfElements;i++)
-        {
-            System.out.print(nums[i]+" ");
+        for (int i = 0; i < noOfElements; i++) {
+            System.out.print(nums[i] + " ");
         }
     }
 }

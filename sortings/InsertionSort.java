@@ -31,20 +31,21 @@ Here, 13 is greater than 12, thus both elements seems to be in ascending order, 
 
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
+
 import java.util.Scanner;
+
 class InsertionSort {
     public static void main(String[] args) {
         //Scanner is used to get input from user
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         //No of elements in unsorted array
         System.out.println("Enter array size");
-        int noOfElements =sc.nextInt();
+        int noOfElements = sc.nextInt();
         //Declaring array and getting
         System.out.println("Enter array elements");
         int nums[] = new int[noOfElements];
-        for (int i=0;i<noOfElements;i++)
-        {
-            nums[i]=sc.nextInt();
+        for (int i = 0; i < noOfElements; i++) {
+            nums[i] = sc.nextInt();
         }
 
         //Insertion sort will find the correct position of given element.
@@ -53,29 +54,25 @@ class InsertionSort {
         //Time Complexity: O(N^2)
         //Auxiliary Space: O(1)
 
-        for(int i=1;i<noOfElements;i++)
-        {
-            int j=i-1;
-            int key=nums[i];
-            while(j>=0&&key<nums[j])
-            {
-                nums[j+1]=nums[j];
+        for (int i = 1; i < noOfElements; i++) {
+            int j = i - 1;
+            int key = nums[i];
+            while (j >= 0 && key < nums[j]) {
+                nums[j + 1] = nums[j];
                 j--;
             }
-            nums[j+1]=key;
+            nums[j + 1] = key;
 
-            for (int k=0;k<noOfElements;k++)
-            {
-                System.out.print(nums[k]+" ");
+            for (int k = 0; k < noOfElements; k++) {
+                System.out.print(nums[k] + " ");
             }
             System.out.println();
         }
 
         // printing sorted elements
 
-        for (int i=0;i<noOfElements;i++)
-        {
-            System.out.print(nums[i]+" ");
+        for (int i = 0; i < noOfElements; i++) {
+            System.out.print(nums[i] + " ");
         }
     }
 }
