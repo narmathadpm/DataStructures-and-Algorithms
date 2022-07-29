@@ -28,7 +28,9 @@ Elements are inserted in the buckets according to the bucket range. Suppose the 
 
 This phase is known to be the scattering of array elements.
 
-
+Best Case	O(n + k)
+Average Case	O(n + k)
+Worst Case	O(n2)
  */
 
 import java.util.Scanner;

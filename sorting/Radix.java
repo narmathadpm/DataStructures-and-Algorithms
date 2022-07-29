@@ -17,7 +17,9 @@ Radix Sort is the answer. The idea of Radix Sort is to do digit by digit sort st
  and 45 & 75.] 170, 90, 802, 2, 24, 45, 75, 66 Sorting by next digit (10s place) gives: [*Notice that 802 again comes
  before 2 as 802 comes before 2 in the previous list.] 802, 2, 24, 45, 66, 170, 75, 90 Sorting by the most significant
  digit (100s place) gives: 2, 24, 45, 66, 75, 90, 170, 802
-
+Best Case	Ω(n+k)
+Average Case	θ(nk)
+Worst Case	O(nk)
  */
 
 
