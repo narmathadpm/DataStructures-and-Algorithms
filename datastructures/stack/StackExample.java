@@ -1,4 +1,4 @@
-/*
+package stack;/*
 
 Stack is a liner data structure and operations will be done using first in last out
 
