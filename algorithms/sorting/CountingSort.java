@@ -1,4 +1,4 @@
-/*
+package sorting;/*
  Counting sort is a sorting technique that is based on the keys between specific ranges.
  In coding or technical interviews for software engineers, sorting algorithms are widely asked.
   So, it is important to discuss the topic

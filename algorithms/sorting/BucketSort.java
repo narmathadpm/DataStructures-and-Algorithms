@@ -1,4 +1,4 @@
-/*
+package sorting;/*
 The data items in the bucket sort are distributed in the form of buckets. In coding or technical interviews
 for software engineers, sorting algorithms are widely asked. So, it is important to discuss the topic.
 

@@ -1,4 +1,4 @@
-/*
+package sorting;/*
 Quick sort also follows divide and Conquer algorithm
 it will pick any element as pivot in given array and divide array using that pivot
 
@@ -36,8 +36,6 @@ Stable	NO
 
  */
 
-
-import netscape.security.UserTarget;
 
 import java.util.Scanner;
 

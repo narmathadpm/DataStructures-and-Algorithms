@@ -1,4 +1,4 @@
-/*
+package sorting;/*
 1.it will follow divide and conquer approach
 we need to divide arrays into two halves and then they are combined in a sorted manner.
 

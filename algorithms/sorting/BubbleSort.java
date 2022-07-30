@@ -1,4 +1,4 @@
-/*
+package sorting;/*
 
 
 Bubble sort starts with very first two elements, comparing them to check which one is greater.

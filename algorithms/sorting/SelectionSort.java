@@ -1,4 +1,4 @@
-/*
+package sorting;/*
 
 
 The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order)
