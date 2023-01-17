@@ -9,12 +9,15 @@ A subarray is a contiguous non-empty sequence of elements within an array.
  
 */
 
-class Solution {
+package leetcode;
+
+public class NumberofZeroFilledSubarrays {
     public long zeroFilledSubarray(int[] nums) {
         long result=0;
         long start=-1;
         long end=-1;
         int i=0;
+
         while(i<nums.length)
         {
             if(nums[i]==0)

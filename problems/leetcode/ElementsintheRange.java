@@ -1,4 +1,4 @@
-/*
+package leetcode;/*
 Given an array arr[] containing positive elements.
  A and B are two numbers defining a range. The task is to check if the array contains all elements in the given range.
  */
@@ -11,7 +11,6 @@ Given an array arr[] containing positive elements.
 
 
 import java.io.*;
-import java.util.*;
 
 
 // } Driver Code Ends
