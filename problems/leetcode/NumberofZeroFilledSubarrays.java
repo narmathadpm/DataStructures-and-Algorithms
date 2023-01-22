@@ -17,8 +17,6 @@ public class NumberofZeroFilledSubarrays {
         long start=-1;
         long end=-1;
         int i=0;
-
-
         while(i<nums.length)
         {
             if(nums[i]==0)
