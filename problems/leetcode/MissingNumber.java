@@ -9,5 +9,7 @@ public class MissingNumber {
 			currentSum = currentSum + nums[i];
 		}
 		return expectedSum - currentSum;
+
+
 	}
 }
